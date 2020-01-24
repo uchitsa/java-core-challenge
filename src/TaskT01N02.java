@@ -8,10 +8,10 @@ public class TaskT01N02 {
         int b = in.nextInt();
         int c = in.nextInt();
 
-        System.out.println("Min value = " + min(a, b, c));
+        System.out.println("Min value = " + minOfThreeNumbers(a, b, c));
     }
 
-    public static int min(int a, int b, int c) {
+    public static int minOfThreeNumbers(int a, int b, int c) {
         int res = a;
 
         if (res > b)
