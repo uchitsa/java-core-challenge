@@ -1,3 +1,5 @@
+package src;
+
 public class TaskT01N03Test {
 
     public static void main(String[] args) {

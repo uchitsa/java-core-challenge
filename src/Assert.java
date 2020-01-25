@@ -1,3 +1,5 @@
+package src;
+
 public class Assert {
     
     public static void assertEquals(String testName, int expected, int actual) {

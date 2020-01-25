@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 
 public class TaskT01N03 {
@@ -14,7 +16,7 @@ public class TaskT01N03 {
 
     public static int minOfFourNumbers(int a, int b, int c, int d) {
         int min1 = a > b ? b : a;
-        int min2 = c > d ? c : d;
+        int min2 = c > d ? d : c;
 
         return min1 < min2 ? min1 : min2;
     }
