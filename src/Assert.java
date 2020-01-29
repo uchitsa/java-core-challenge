@@ -9,8 +9,8 @@ public class Assert {
             System.out.println(testName + " failed: expected " + expected + ", actual " + actual);
     }
 
-    public static void assertEquals(String testName, double expected, double actual) {
-        if ((long) 100 * expected == (long) 100 * actual)
+    public static void assertEquals(String testName, double precision, double expected, double actual) {
+        if (((long) 100 * expected - (long) 100 * actual) < precision)
             System.out.println(testName + " passed");
         else
             System.out.println(testName + " failed: expected " + expected + ", actual " + actual);

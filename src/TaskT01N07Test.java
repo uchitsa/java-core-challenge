@@ -6,6 +6,6 @@ public class TaskT01N07Test {
     }
 
     public static void testPi(){
-        Assert.assertEquals("testPI", 3.14, TaskT01N07.getPi());
+        Assert.assertEquals("testPI", 0.01, 3.14, TaskT01N07.getPi());
     }
 }
