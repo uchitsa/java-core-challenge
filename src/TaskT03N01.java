@@ -10,7 +10,7 @@ public class TaskT03N01 {
         String s = scan.nextLine();
         System.out.println("Enter № of char:");
         int n = scan.nextInt();
-        if (n < s.length())
+        if (n >= 0 && n < s.length())
             System.out.println(getNthSymbol(s, n));
         else
             System.out.println("Uncorrect № of char");
