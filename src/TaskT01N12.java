@@ -33,9 +33,8 @@ public class TaskT01N12 {
 
         if (h > HALF_DAY_HOURS)
             h -= HALF_DAY_HOURS;
-        double minutesPart = m + s / SECONDS_IN_MINUTE;
+        double minutesPart = m + (double) s / SECONDS_IN_MINUTE;
         double hoursPart = (h + minutesPart / MINUTES_IN_HOUR) / HALF_DAY_HOURS;
-        double angle = hoursPart * DEGREES_OF_12_HOURS;
-        return angle;
+        return hoursPart * DEGREES_OF_12_HOURS;
     }
 }

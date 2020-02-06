@@ -22,4 +22,11 @@ public class Assert {
         else
             System.out.println(testName + " failed: expected " + expected + ", actual " + actual);
     }
+
+    public static void assertEquals(String testName, String expected, String actual) {
+        if (expected.equals(actual))
+            System.out.println(testName + " passed");
+        else
+            System.out.println(testName + " failed: expected " + expected + ", actual " + actual);
+    }
 }

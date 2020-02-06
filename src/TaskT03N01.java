@@ -16,7 +16,7 @@ public class TaskT03N01 {
             System.out.println("Uncorrect № of char");
     }
 
-    static char getNthSymbol(String s, int n) {
+    public static char getNthSymbol(String s, int n) {
         return s.charAt(n);
     }
 }

@@ -14,7 +14,7 @@ public class TaskT01N01 {
         System.out.println("Max value = " + max(a, b));
     }
 
-    public static int max(int a, int b) {
+    static int max(int a, int b) {
         return a >= b ? a : b;
     }
 }
