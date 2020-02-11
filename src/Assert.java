@@ -1,5 +1,7 @@
 package src;
 
+import java.util.Arrays;
+
 public class Assert {
 
     public static void assertEquals(String testName, int expected, int actual) {
@@ -28,5 +30,12 @@ public class Assert {
             System.out.println(testName + " passed");
         else
             System.out.println(testName + " failed: expected " + expected + ", actual " + actual);
+    }
+
+    public static void assertEquals(String testName, int[] expected, int[] actual) {
+        if (Arrays.equals(expected, actual))
+            System.out.println(testName + " passed");
+        else
+            System.out.println(testName + " failed: expected " + Arrays.toString(expected) + ", actual " + Arrays.toString(actual));
     }
 }
